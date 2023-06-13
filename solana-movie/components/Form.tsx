@@ -28,7 +28,7 @@ export const Form: FC = () => {
             return
         }
 
-        const buffer = movie.serialize()
+        const buffer = movie.serialize() // get a buffer representing the instruction data
         const transaction = new web3.Transaction()
 
         // it takes two variables - the seeds(the sender's address) and the title
